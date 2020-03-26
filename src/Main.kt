@@ -9,7 +9,10 @@ import com.saenz.labo1.Figures.Triangulo
     fun main(Args: Array<String>){
 
         val myArray= arrayListOf<Figure>()
-        val fig1 = Rectangulo(12.0f,24.1f,"rectangulo")
+        val fig1 = Rectangulo(12.0f, 24.1f, "rec")
+        print(fig1.name)
+        fig1.name="rectangulo"
+        print(fig1.name)
         val fig2 = Cuadrado(12.0f,"cuadrado")
         val fig3 = Triangulo(12.0f,24.1f,"triangulo")
         val fig4 = Circulo(12.0f,"circulo")
@@ -20,10 +23,14 @@ import com.saenz.labo1.Figures.Triangulo
         myArray.add(fig4)
 
         //println(myArray[0].surface())
+        for (i in 0..myArray.size){
+
+        }
         myArray.forEach(){
-            println("i "+it.surface())
-           // println("\t perimetro: "+ it.perimeter())
-           // println("\t area: "+ it.surface())
+           println("\n ")
+           println("figura: "+it.name)
+            println("\t perimetro: "+ it.perimeter())
+            println("\t area: "+ it.surface())
         }
 
         val tiempo1 = Tiempo(12,23,12)
