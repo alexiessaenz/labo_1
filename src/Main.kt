@@ -26,7 +26,8 @@ import com.saenz.labo1.Figures.Triangulo
            // println("\t area: "+ it.surface())
         }
 
-        val tiempo = Tiempo(12,23,12)
-        val tiempo3 = Tiempo()
+        val tiempo1 = Tiempo(12,23,12)
+        val tiempo2 = Tiempo(hora=12, minuto = 23)
+        val tiempo3 = Tiempo (minuto = 23)
 
     }
